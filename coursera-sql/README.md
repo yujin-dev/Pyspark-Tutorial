@@ -1,6 +1,9 @@
 # Coursera [ Distributed Computing with Spark SQL ]
 
-reference
+### open
+python open_html.py [html파일]
+
+### reference
 - https://www.coursera.org/learn/spark-sql/home
 - Databricks Inc.
 
