@@ -1,4 +1,4 @@
-# Pyspark tutorial 복습
+# Pyspark tutorial 정리
 
 강의 : https://www.youtube.com/watch?v=QLGrLFOzMRw&list=PL0hSJrxggIQr6wA8buIn1Yxu810ugGed-
 
