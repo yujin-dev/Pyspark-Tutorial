@@ -1,4 +1,4 @@
-# Spark Note
+# Hadoop - Spark
 
 ## Spark
 - MapReduce : 디스크로부터 데이터를 읽은 후 Map을 통해 데이터를 key-value로 묶은 후 Reduce를 통해 중복된 데이터를 제거하고 가공하여 디스크에 저장한다. 
