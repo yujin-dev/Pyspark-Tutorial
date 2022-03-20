@@ -86,3 +86,43 @@ Spark는 데이터 처리 엔진이다.
 
 **What are broadcast variable?**
 - Broadcast variable keep a readonly variable cached on each machine, rather than shipping a copy with a task
+
+# Hive & HBase
+**Describe the difference between Hive & Hbase?**
+- Hive: DW and SQL like engine (HQL) that runs MR jobs 
+- Hbase: key/value store DB, Real-time, no MR underneath
+
+**What kind of app supported by Hive?**
+- Hive supports client's app written in Java, python, PHP, C++, Ruby by exposing its thrift server
+
+**Where does the data of hive table gets stored at?**
+- By default, the Hive table is stored in an HDFS directory - /user/hive/warehouse.
+
+**What is metastore in Hive?**
+- Metastore stores hive metadata info using RDBMS and an open source ORM layer called Data Nucleus which converts object schema into relational schema
+
+**Why Hive does not store meta data info in HDFS?**
+- It uses RDBMS for low latency since HDFS has time consuming READ/WRITE operations
+
+**What is the default database provided by Apache Hive for metastore?**
+- Embedded Derby DB backed by local disk for the metastore
+
+**What will happen if we have multiple thrift clients trying to access Hive at the same time?**
+- The default metastore config allows only one hive session opened for accessing the metastore, so all other clients will get errors
+
+**What is the default location where “Hive” stores table data?**
+/user/hive/wharehouse in HDFS
+
+**What is "SerDe" in hive?**
+It's serializer/deserializer to read and write the table row
+
+**What are the components of Apache HBase?**
+- Region Server: serve data for reads and writes 
+- HMaster: handles region assignment
+- DDL Zookeeper: maintains a live cluster state
+
+**What are the components of Region Server?**
+- WAL (log), Block Cache (read cache), MemStore (write cache). 4. Hfile (KV table on disk)
+
+**Explain “WAL” in HBase?**
+- It is a file attached to every region server. It stores new data that has not been commited to the permanent storage. It's used in failure to recover the dataset
