@@ -66,23 +66,23 @@ Spark는 데이터 처리 엔진이다.
 **What is SparkContext?**  
 - It's a master driver program and sets up internal services and establishes a connection to a Spark execution environment. When creating RDDs, SparkContext connect to the spark cluster to create new spark context object.
 
-What is SparkCore functionalities 
-Spark core is base engine of spark FW. It controls memory mgmt, fault tolarance, scheduling, and monitoring jobs, interacting with data stores.
+**What is SparkCore functionalities?** 
+- Spark core is base engine of spark FW. It controls memory mgmt, fault tolarance, scheduling, and monitoring jobs, interacting with data stores.
 
-How SparkSQL is different from HQL and SQL?
-SparkSQL is a component of SparkCore engine that support SQL. and HQL without changing any syntax. It's possible to join SQL tables and HQL tables
+**How SparkSQL is different from HQL and SQL?**
+- SparkSQL is a component of SparkCore engine that support SQL. and HQL without changing any syntax. It's possible to join SQL tables and HQL tables
  
-When did we use Spark Streaming?
-Is a real-time processing of streaming data API. Spark streaming gather streaming data from different sources
+**When did we use Spark Streaming?**
+- ßIs a real-time processing of streaming data API. Spark streaming gather streaming data from different sources
 
-Why partitions are immutable?
-Every transformation creates new partitions. Partitions use HDFS API so they are immutable, distributed, and fault tolerant.
+**Why partitions are immutable?**
+- Every transformation creates new partitions. Partitions use HDFS API so they are immutable, distributed, and fault tolerant.
 
-What is Spark MLlib?
-Mahout is a ML library for hadoop, similarly MLlib is a Spark library. MLlib provdies algorithms that can scale out on the cluster for data processing
+**What is Spark MLlib?**
+- Mahout is a ML library for hadoop, similarly MLlib is a Spark library. MLlib provdies algorithms that can scale out on the cluster for data processing
 
-How Spark Streaming API works?
-We configure specific time window, all data collected during this time window, data seperates as a batch. The input stream goes into spark streaming
+**How Spark Streaming API works?**
+- We configure specific time window, all data collected during this time window, data seperates as a batch. The input stream goes into spark streaming
 
-What are broadcast variable?
-Broadcast variable keep a readonly variable cached on each machine, rather than shipping a copy with a task
+**What are broadcast variable?**
+- Broadcast variable keep a readonly variable cached on each machine, rather than shipping a copy with a task
