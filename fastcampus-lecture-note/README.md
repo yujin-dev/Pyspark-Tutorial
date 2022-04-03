@@ -88,6 +88,9 @@ Spark는 데이터 처리 엔진이다.
 - Broadcast variable keep a readonly variable cached on each machine, rather than shipping a copy with a task
 
 # Hive & HBase
+
+### Summary
+
 **Describe the difference between Hive & Hbase?**
 - Hive: DW and SQL like engine (HQL) that runs MR jobs 
 - Hbase: key/value store DB, Real-time, no MR underneath
